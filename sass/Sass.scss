@@ -1,0 +1,140 @@
+@import "fuentes";
+@import "generales";
+@import "mapa";
+@import "animaciones";
+
+
+.btn{
+    margin-left: 40px;
+}
+
+.reseñas{
+    text-align: center;
+}
+
+.padre{
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 45px;
+    justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 145px;
+}
+
+.segundoParrafo{
+    border-radius: 30px;
+    color: black;
+    padding: 30px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-left: 30px;
+    border: 2px groove orange;
+    text-align: justify;
+}
+
+img{
+    border:2px solid black;
+    width: 350px;
+    height: 250px; 
+}
+
+
+/*Media Queries*/
+@media (min-width:500px){
+
+    img{
+        width: 350px;
+        height: 300px;
+    }
+
+    footer{
+        letter-spacing: 5em;
+        margin-top: 2em;  
+    }
+}
+
+@media (min-width:768px){
+   
+    .padre{
+        background-color:  burlywood;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 6em;
+    }
+
+    img{
+        width: 400px;
+        height: 350px;
+        border: 5px solid black;
+    }
+
+    .mapama{
+        width: 760px;
+        height: 420px;
+        border: 10px groove blueviolet; 
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    footer{
+        background-color: cadetblue;
+        margin-top: 3em;
+    }
+}
+
+@media (min-width:1024px){
+  
+    .padre{
+        padding: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        margin: 0;
+    }
+
+    .mapama{
+        width: 1024px;
+        height: 820px;
+        border: 10px groove blueviolet; 
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    img{
+        width: 475px;
+        height: 400px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width:1366px){
+
+    .mapama{
+        width: 1360px;
+        height: 720px;
+        border: 10px groove blueviolet; 
+        margin-top: 20px;
+        margin-left: 10px;
+    }   
+}
+
+@media (min-width:1920px){
+
+    img{
+        width: 745px;
+        height: 500px;
+        margin-top: 10px;
+    }
+    .mapama{
+        width: 1870px;
+        height: 720px;
+        border: 10px groove blueviolet; 
+        margin-top: 20px;
+        margin-left: 10px;
+    } 
+}
+
+

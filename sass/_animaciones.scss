@@ -1,0 +1,25 @@
+/*Animaciones*/
+
+.box{
+    text-align: center;
+    font-style: italic;
+    border-radius: 8px;
+    height: 25px;
+    width: 200px;
+    margin: 50px 20px 30px 90px;
+}
+
+.box1{
+    background: rgb(33,111,112);
+    background: linear-gradient(0deg, rgba(33,111,112,1) 0%, rgba(240,208,139,1) 100%);
+    transition: all 1s;
+}
+
+.box:hover{
+    transform: scale(1.5);
+}
+
+.index:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
