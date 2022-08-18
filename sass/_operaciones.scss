@@ -1,0 +1,50 @@
+/*Map*/
+$redes:(
+    tiktok:cyan,
+    facebook:  cadetblue,
+    instagram: crimson,
+);
+
+@each $red, $color in $redes{
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
+/*Map Get*/
+$estilos: (
+  color: burlywood,
+  centro: left,
+  wFuente: bolder,
+  fFuente: 'Times New Roman',
+);
+
+body {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  font-family:map-get($estilos, fFuente);
+  font-weight:map-get($estilos, wFuente);
+}
+
+/*Extend*/
+.Extender{
+    background-color: cadetblue;
+    font-weight: lighter;
+}
+
+.fondoNav{
+    @extend .Extender;
+    font-size: 40px;
+}
+
+/*Mixin*/
+@mixin sizes($width,$height){
+    height: $height;
+    width: $width;
+}
+
+.index{
+    @include sizes(250px,300px);
+    border: 1px solid black;
+    margin-left: 50px;
+}

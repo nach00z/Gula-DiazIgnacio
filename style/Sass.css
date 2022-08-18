@@ -1,15 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   padding: 0;
   margin: 0;
-}
-
-body {
-  background-color: burlywood;
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bolder;
 }
 
 .nav {
@@ -22,18 +16,6 @@ body {
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 1;
-}
-
-.fondoNav {
-  background-color: cadetblue;
-  font-weight: lighter;
-  font-size: 40px;
-}
-
-a {
-  text-decoration: none;
-  color: aliceblue;
-  padding: 20px;
 }
 
 h1 {
@@ -52,10 +34,10 @@ h1 {
 }
 
 h2 {
-  font-style: normal;
-  font-weight: lighter;
-  font-family: "Roboto";
-  font-size: 25px;
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Montserrat";
+  font-size: 20px;
   margin: 24px 20px 14px 20px;
 }
 
@@ -86,9 +68,11 @@ footer {
 
 .mapa {
   padding-left: 15px;
+  padding-top: 5px;
   font-style: italic;
   font-weight: lighter;
   font-family: "Roboto";
+  font-size: 18px;
 }
 
 .mapama {
@@ -98,37 +82,60 @@ footer {
   margin-top: 20px;
 }
 
-/*Animaciones*/
-.box {
-  text-align: center;
-  font-style: italic;
-  border-radius: 8px;
-  height: 25px;
-  width: 200px;
-  margin: 50px 20px 30px 90px;
+/*Map*/
+.btn--tiktok {
+  background-color: cyan;
 }
 
-.box1 {
-  background: rgb(33, 111, 112);
-  background: linear-gradient(0deg, rgb(33, 111, 112) 0%, rgb(240, 208, 139) 100%);
-  transition: all 1s;
+.btn--facebook {
+  background-color: cadetblue;
 }
 
-.box:hover {
-  transform: scale(1.5);
+.btn--instagram {
+  background-color: crimson;
 }
 
-.index:hover {
-  transform: scale(1.1);
-  transition: all 1s;
+/*Map Get*/
+body {
+  background-color: burlywood;
+  text-align: left;
+  font-family: "Times New Roman";
+  font-weight: bolder;
 }
 
-.btn {
-  margin-left: 40px;
+/*Extend*/
+.Extender, .fondoNav {
+  background-color: cadetblue;
+  font-weight: lighter;
+}
+
+.fondoNav {
+  font-size: 40px;
+}
+
+/*Mixin*/
+.index {
+  height: 300px;
+  width: 250px;
+  border: 1px solid black;
+  margin-left: 50px;
 }
 
 .reseñas {
   text-align: center;
+}
+
+.inicio {
+  background-color: burlywood;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 45px;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 45px;
+  /*flex-wrap: nowrap;
+  margin-left: 50px;*/
 }
 
 .padre {
@@ -155,15 +162,20 @@ footer {
 
 img {
   border: 2px solid black;
-  width: 350px;
-  height: 250px;
+  width: 250px;
+  height: 350px;
 }
 
 /*Media Queries*/
 @media (min-width: 500px) {
   img {
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
+  }
+  .index {
+    border: 1px solid black;
+    width: 250px;
+    height: 350px;
   }
   footer {
     letter-spacing: 5em;
@@ -179,8 +191,8 @@ img {
     margin: 6em;
   }
   img {
-    width: 400px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     border: 5px solid black;
   }
   .mapama {
@@ -211,8 +223,8 @@ img {
     margin-left: 10px;
   }
   img {
-    width: 475px;
-    height: 400px;
+    width: 400px;
+    height: 550px;
     margin-top: 20px;
   }
 }
@@ -224,12 +236,22 @@ img {
     margin-top: 20px;
     margin-left: 10px;
   }
+  .index {
+    border: 1px solid black;
+    width: 400px;
+    height: 600px;
+  }
 }
 @media (min-width: 1920px) {
   img {
-    width: 745px;
-    height: 500px;
+    width: 500px;
+    height: 700px;
     margin-top: 10px;
+  }
+  .index {
+    border: 1px solid black;
+    width: 550px;
+    height: 750px;
   }
   .mapama {
     width: 1870px;

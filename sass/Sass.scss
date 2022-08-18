@@ -1,15 +1,26 @@
 @import "fuentes";
 @import "generales";
 @import "mapa";
-@import "animaciones";
+@import "operaciones";
 
-
-.btn{
-    margin-left: 40px;
-}
 
 .reseñas{
     text-align: center;
+
+}
+
+.inicio{
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 45px;
+    justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 45px;
+   
+    /*flex-wrap: nowrap;
+    margin-left: 50px;*/
 }
 
 .padre{
@@ -36,8 +47,8 @@
 
 img{
     border:2px solid black;
-    width: 350px;
-    height: 250px; 
+    width: 250px;
+    height: 350px; 
 }
 
 
@@ -45,8 +56,14 @@ img{
 @media (min-width:500px){
 
     img{
-        width: 350px;
-        height: 300px;
+        width: 250px;
+        height: 350px;
+    }
+
+    .index{
+        border: 1px solid black;
+        width: 250px;
+        height: 350px; 
     }
 
     footer{
@@ -66,8 +83,8 @@ img{
     }
 
     img{
-        width: 400px;
-        height: 350px;
+        width: 350px;
+        height: 450px;
         border: 5px solid black;
     }
 
@@ -104,10 +121,11 @@ img{
     }
 
     img{
-        width: 475px;
-        height: 400px;
+        width: 400px;
+        height: 550px;
         margin-top: 20px;
     }
+
 }
 
 @media (min-width:1366px){
@@ -118,16 +136,29 @@ img{
         border: 10px groove blueviolet; 
         margin-top: 20px;
         margin-left: 10px;
-    }   
+    }  
+
+    .index{
+        border: 1px solid black;
+        width: 400px;
+        height: 600px; 
+    }
 }
 
 @media (min-width:1920px){
 
     img{
-        width: 745px;
-        height: 500px;
+        width: 500px;
+        height: 700px;
         margin-top: 10px;
     }
+
+    .index{
+        border: 1px solid black;
+        width: 550px;
+        height: 750px; 
+    }
+
     .mapama{
         width: 1870px;
         height: 720px;
