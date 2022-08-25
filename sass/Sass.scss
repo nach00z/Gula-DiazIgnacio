@@ -2,12 +2,11 @@
 @import "generales";
 @import "mapa";
 @import "operaciones";
+@import "reseñas";
+@import "recetas";
+@import "contacto";
 
 
-.reseñas{
-    text-align: center;
-
-}
 
 .inicio{
     background-color: burlywood;
@@ -20,6 +19,7 @@
     margin-bottom: 45px;
 }
 
+
 .padre{
     background-color: burlywood;
     display: grid;
@@ -29,17 +29,6 @@
     justify-items: center;
     margin-top: 50px;
     margin-bottom: 145px;
-}
-
-.segundoParrafo{
-    border-radius: 30px;
-    color: black;
-    padding: 30px;
-    margin-right: 10px;
-    margin-top: 0px;
-    margin-left: 30px;
-    border: 2px groove orange;
-    text-align: justify;
 }
 
 img{
@@ -109,6 +98,18 @@ img{
         margin: 0;
     }
 
+    .segundoParrafo{
+        border-radius: 30px;
+        color: black;
+        padding: 30px;
+        margin-right: 10px;
+        margin-top: 25px;
+        margin-left: 30px;
+        margin-bottom: 200px;
+        border: 2px solid rgb(92, 16, 16);
+        text-align: justify;
+    }
+
     .mapama{
         width: 1024px;
         height: 820px;
@@ -127,6 +128,18 @@ img{
 
 @media (min-width:1366px){
 
+    .segundoParrafo{
+        border-radius: 30px;
+        color: black;
+        padding: 30px;
+        margin-right: 10px;
+        margin-top: 25px;
+        margin-left: 30px;
+        margin-bottom: 200px;
+        border: 2px solid rgb(92, 16, 16);
+        text-align: justify;
+    }
+
     .mapama{
         width: 1360px;
         height: 720px;
@@ -144,8 +157,20 @@ img{
 
 @media (min-width:1920px){
 
+    .segundoParrafo{
+        border-radius: 30px;
+        color: black;
+        padding: 30px;
+        margin-right: 10px;
+        margin-top: 25px;
+        margin-left: 30px;
+        margin-bottom: 200px;
+        border: 2px solid rgb(92, 16, 16);
+        text-align: justify;
+    }
+
     img{
-        width: 500px;
+        width: 550px;
         height: 700px;
         margin-top: 10px;
     }

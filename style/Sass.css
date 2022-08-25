@@ -124,6 +124,63 @@ body {
 
 .reseñas {
   text-align: center;
+  font-size: 19px;
+}
+
+.rese {
+  font-size: 25px;
+  margin-left: 40px;
+  font-weight: bolder;
+}
+
+.titulosReseñas {
+  text-align: center;
+  font-size: 24px;
+  font-weight: lighter;
+  color: white;
+  background-color: cadetblue;
+  border: 1px groove rgb(92, 16, 16);
+  border-width: 3px;
+}
+
+.titulosRecetas {
+  border-radius: 6px;
+  height: 45px;
+  width: 270px;
+  background-color: rgb(220, 241, 220);
+  transition: all 2s;
+  margin-top: 149px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.titulosRecetas:hover {
+  transform: scale(1.5);
+}
+
+.segundoParrafo {
+  border-radius: 30px;
+  color: black;
+  padding: 30px;
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-left: 30px;
+  border: 2px solid rgb(92, 16, 16);
+  border-width: 5px;
+  text-align: justify;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .inicio {
@@ -146,17 +203,6 @@ body {
   justify-items: center;
   margin-top: 50px;
   margin-bottom: 145px;
-}
-
-.segundoParrafo {
-  border-radius: 30px;
-  color: black;
-  padding: 30px;
-  margin-right: 10px;
-  margin-top: 0px;
-  margin-left: 30px;
-  border: 2px groove orange;
-  text-align: justify;
 }
 
 img {
@@ -214,6 +260,17 @@ img {
     height: auto;
     margin: 0;
   }
+  .segundoParrafo {
+    border-radius: 30px;
+    color: black;
+    padding: 30px;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 200px;
+    border: 2px solid rgb(92, 16, 16);
+    text-align: justify;
+  }
   .mapama {
     width: 1024px;
     height: 820px;
@@ -228,6 +285,17 @@ img {
   }
 }
 @media (min-width: 1366px) {
+  .segundoParrafo {
+    border-radius: 30px;
+    color: black;
+    padding: 30px;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 200px;
+    border: 2px solid rgb(92, 16, 16);
+    text-align: justify;
+  }
   .mapama {
     width: 1360px;
     height: 720px;
@@ -242,8 +310,19 @@ img {
   }
 }
 @media (min-width: 1920px) {
+  .segundoParrafo {
+    border-radius: 30px;
+    color: black;
+    padding: 30px;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 200px;
+    border: 2px solid rgb(92, 16, 16);
+    text-align: justify;
+  }
   img {
-    width: 500px;
+    width: 550px;
     height: 700px;
     margin-top: 10px;
   }
